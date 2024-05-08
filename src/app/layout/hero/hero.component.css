@@ -1,0 +1,28 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 84%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-animation {
+  overflow: hidden; /* Para ocultar el texto adicional */
+  white-space: nowrap; /* Para que el texto se muestre en una sola línea */
+  animation: typing 1.8s steps(28, end); /* Ajusta la duración y el número de pasos según tus preferencias */
+}
+
+.blink {
+  animation: blink 1s infinite; /* Aplica la animación de parpadeo al elemento */
+}
