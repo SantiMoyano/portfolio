@@ -28,10 +28,17 @@
 }
 
 .icon-transition {
-  transition: transform 0.2s ease-in-out, color 0.3s ease;
+  border: solid 2px black;
+  border-radius: 6px;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease-in-out, color 0.3s ease,
+    background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .icon-transition:hover {
-  transform: scale(1.16);
-  color: white;
+  transform: scale(1.04);
+  color: rgb(193, 255, 37);
+  background-color: black;
+  box-shadow: none;
+  border: solid 2px rgb(193, 255, 37);
 }

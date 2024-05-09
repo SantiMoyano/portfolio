@@ -24,6 +24,10 @@ header {
   background-color: rgb(13, 13, 13);
 }
 
+.bg-3 {
+  background-color: rgb(193, 255, 37);
+}
+
 .min-content-height {
   min-height: calc(100dvh - 80px);
 }
