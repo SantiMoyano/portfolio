@@ -5,12 +5,7 @@
   >
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Your Company</span>
-        <img
-          class="h-8 w-auto"
-          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-          alt=""
-        />
+        <p class="font-bold custom-font-color">Logo</p>
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -37,14 +32,22 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-12 text-white">
-      <ng-container *ngFor="let item of menuItems">
-        <a href="{{ item.link }}" class="text-sm font-semibold leading-6">{{
-          item.label
-        }}</a>
+      <ng-container *ngFor="let item of menuItems; let i = index">
+        <button
+          class="rounded-2xl custom-transition-btn"
+          [class.selected]="selectedItemIndex === i"
+          (click)="selectItem(i)"
+        >
+          <a
+            href="{{ item.link }}"
+            class="text-sm font-bold text-white leading-6 px-4"
+            >{{ item.label }}</a
+          >
+        </button>
       </ng-container>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+      <a href="#" class="text-sm font-semibold leading-6"
         >Log in <span aria-hidden="true">&rarr;</span></a
       >
     </div>

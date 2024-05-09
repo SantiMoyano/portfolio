@@ -3,7 +3,7 @@
     width: 0;
   }
   to {
-    width: 84%;
+    width: 97%;
   }
 }
 
@@ -18,11 +18,11 @@
 }
 
 .typing-animation {
-  overflow: hidden; /* Para ocultar el texto adicional */
-  white-space: nowrap; /* Para que el texto se muestre en una sola línea */
-  animation: typing 1.8s steps(28, end); /* Ajusta la duración y el número de pasos según tus preferencias */
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.2s steps(28, end);
 }
 
 .blink {
-  animation: blink 1s infinite; /* Aplica la animación de parpadeo al elemento */
+  animation: blink 1s infinite;
 }

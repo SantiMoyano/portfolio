@@ -12,13 +12,18 @@ interface MenuItem {
 })
 export class HeaderComponent {
   menuItems: MenuItem[] = [
-    { label: 'Sobre mí', link: '/about' },
+    { label: 'Inicio', link: '/' },
     { label: 'Experiencia', link: '/experience' },
     { label: 'Proyectos', link: '/projects' },
     { label: 'Contacto', link: '/contact' },
   ];
 
   isMenuOpen = false;
+  selectedItemIndex: number = -1;
+
+  selectItem(index: number) {
+    this.selectedItemIndex = index;
+  }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;

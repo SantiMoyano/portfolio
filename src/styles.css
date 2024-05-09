@@ -1,3 +1,4 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +17,8 @@ body {
 
 .min-content-height {
   min-height: calc(100dvh - 80px);
+}
+
+.custom-font-color {
+  color: yellow;
 }

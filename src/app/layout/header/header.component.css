@@ -1,0 +1,24 @@
+.selected {
+  background-color: #fff;
+  color: black;
+}
+
+.selected a {
+  color: black;
+}
+
+.custom-transition-btn {
+  transition: background-color 0.2s ease;
+}
+
+.custom-transition-btn:hover {
+  background-color: #fff;
+}
+
+.custom-transition-btn a {
+  transition: color 0.2s ease;
+}
+
+.custom-transition-btn:hover a {
+  color: black;
+}
