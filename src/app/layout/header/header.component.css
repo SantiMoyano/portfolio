@@ -1,24 +1,32 @@
-.selected {
-  background-color: #fff;
-  color: black;
-}
-
-.selected a {
-  color: black;
-}
-
 .custom-transition-btn {
-  transition: background-color 0.2s ease;
+  border: solid 2px black;
+  border-radius: 6px;
+  box-shadow: 6px 6px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease-in-out, color 0.3s ease,
+    background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .custom-transition-btn:hover {
-  background-color: #fff;
+  transform: scale(1.04);
+  color: rgb(193, 255, 37);
+  background-color: black;
+  box-shadow: none;
+  border: solid 2px rgb(193, 255, 37);
 }
 
 .custom-transition-btn a {
+  color: rgb(255, 255, 255);
   transition: color 0.2s ease;
 }
 
 .custom-transition-btn:hover a {
-  color: black;
+  color: rgb(193, 255, 37);
+}
+
+.selected {
+  background-color: black;
+}
+
+.selected a {
+  color: rgb(193, 255, 37);
 }

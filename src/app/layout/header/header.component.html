@@ -31,10 +31,10 @@
         </svg>
       </button>
     </div>
-    <div class="hidden lg:flex lg:gap-x-2 text-white">
+    <div class="hidden lg:flex lg:gap-x-4 text-white">
       <ng-container *ngFor="let item of menuItems; let i = index">
         <button
-          class="rounded-2xl custom-transition-btn"
+          class="rounded-md custom-transition-btn"
           [class.selected]="selectedItemIndex === i"
           (click)="selectItem(i)"
         >

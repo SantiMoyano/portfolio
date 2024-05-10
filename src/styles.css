@@ -12,8 +12,8 @@ html {
 
 body,
 header {
-  background-color: rgb(26, 26, 26);
-  font-family: "Montserrat", "sans-serif";
+  background-color: rgb(0, 0, 0);
+  font-family: "Space Mono", "Montserrat", "sans-serif";
 }
 
 .bg-1 {
@@ -33,8 +33,8 @@ header {
 }
 
 .presentation-box {
-  border: 2px solid rgb(193, 255, 37);
-  border-style: dotted;
+  border: 2px dotted rgb(193, 255, 37);
+  box-shadow: 8px 8px rgb(13, 13, 13);
 }
 
 .custom-font-color {
@@ -42,9 +42,9 @@ header {
 }
 
 .content-width {
-  width: 720px;
-  min-width: 720px;
-  max-width: 720px;
+  width: 780px;
+  min-width: 780px;
+  max-width: 780px;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,6 +55,7 @@ header {
   }
 
   .presentation-box {
-    border: none;
+    width: 90%;
+    padding: 24px;
   }
 }

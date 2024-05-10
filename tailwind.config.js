@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ["Montserrat", "sans-serif"],
+        custom: ["Space Mono", "Pixelade", "Montserrat", "sans-serif"],
       },
     },
   },
