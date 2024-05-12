@@ -1,0 +1,7 @@
+ul.flex.flex-row li {
+  white-space: nowrap;
+}
+
+ul.flex.flex-row.custom-font-color {
+  flex-wrap: wrap;
+}

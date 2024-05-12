@@ -1,13 +1,14 @@
 .custom-transition-btn {
   border: solid 2px black;
   border-radius: 6px;
+  background-color: rgb(193, 255, 37);
   box-shadow: 6px 6px rgba(0, 0, 0, 1);
   transition: transform 0.3s ease-in-out, color 0.3s ease,
     background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .custom-transition-btn:hover {
-  transform: scale(1.04);
+  transform: scale(1.06);
   color: rgb(193, 255, 37);
   background-color: black;
   box-shadow: none;
@@ -15,7 +16,7 @@
 }
 
 .custom-transition-btn a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: color 0.2s ease;
 }
 

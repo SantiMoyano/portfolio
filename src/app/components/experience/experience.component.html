@@ -1,0 +1,46 @@
+<section class="flex justify-center items-center text-gray-200 py-12">
+  <div class="content-width presentation-box bg-2">
+    <div class="md:p-8">
+      <h2 class="font-bold text-xl mb-8 md:text-2xl">Experiencia</h2>
+      <ul>
+        <ng-container
+          *ngFor="let experiencia of experienciaLaboral; let last = last"
+        >
+          <li>
+            <div>
+              <h3 class="custom-font-color md:text-xl text-lg">
+                {{ experiencia.titulo }}
+              </h3>
+              <div class="flex flex-col">
+                <span>{{ experiencia.puesto }}</span>
+                <span class="text-gray-400 text-sm">{{
+                  experiencia.fecha
+                }}</span>
+              </div>
+              <p class="md:text-lg text-sm py-4">
+                {{ experiencia.descripcion }}
+              </p>
+              <div>
+                <h4 class="text-semibold"><strong>Herramientas:</strong></h4>
+                <ul
+                  class="flex flex-row custom-font-color gap-x-2 md:text-lg text-sm"
+                >
+                  <li
+                    *ngFor="
+                      let herramienta of experiencia.herramientas;
+                      let lastHerramienta = last
+                    "
+                  >
+                    {{ herramienta }}<span *ngIf="!lastHerramienta"> ·</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Solo mostrar el hr si no es el último elemento de la lista -->
+          <hr class="my-8 mx-20" *ngIf="!last" />
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</section>

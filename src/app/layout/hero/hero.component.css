@@ -36,7 +36,7 @@
 }
 
 .icon-transition:hover {
-  transform: scale(1.04);
+  transform: scale(1.06);
   color: rgb(193, 255, 37);
   background-color: black;
   box-shadow: none;
