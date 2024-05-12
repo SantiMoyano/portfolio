@@ -42,3 +42,9 @@
   box-shadow: none;
   border: solid 2px rgb(193, 255, 37);
 }
+
+@media screen and (max-width: 314px) {
+  .hidden-text {
+    display: none;
+  }
+}

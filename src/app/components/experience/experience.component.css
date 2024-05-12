@@ -5,3 +5,9 @@ ul.flex.flex-row li {
 ul.flex.flex-row.custom-font-color {
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+  .tools-text {
+    font-size: small;
+  }
+}

@@ -21,7 +21,7 @@ header {
 }
 
 .bg-2 {
-  background-color: rgb(13, 13, 13);
+  background-color: rgb(0, 0, 0);
 }
 
 .bg-3 {
@@ -34,7 +34,7 @@ header {
 
 .presentation-box {
   border: 2px dotted rgb(193, 255, 37);
-  box-shadow: 8px 8px rgb(13, 13, 13);
+  box-shadow: 8px 8px rgb(0, 0, 0);
 }
 
 .custom-font-color {
