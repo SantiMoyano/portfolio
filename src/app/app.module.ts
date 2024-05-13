@@ -5,6 +5,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { HeaderComponent } from './layout/header/header.component';
 import { HeroComponent } from './layout/hero/hero.component';
 import { NgModule } from '@angular/core';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { NgModule } from '@angular/core';
     HeroComponent,
     AboutComponent,
     ExperienceComponent,
+    ProjectsComponent,
   ],
   imports: [BrowserModule],
   providers: [],

@@ -8,15 +8,13 @@
         >
           <li>
             <div>
+              <div class="flex flex-col tools-text md:text-sm">
+                <span class="text-gray-400">{{ experiencia.fecha }}</span>
+              </div>
               <h3 class="custom-font-color md:text-xl text-lg">
                 <strong> {{ experiencia.titulo }}</strong>
               </h3>
-              <div class="flex flex-col">
-                <span>{{ experiencia.puesto }}</span>
-                <span class="text-gray-400 text-sm">{{
-                  experiencia.fecha
-                }}</span>
-              </div>
+
               <p class="tools-text py-4">
                 {{ experiencia.descripcion }}
               </p>

@@ -1,0 +1,34 @@
+<section class="flex justify-center items-center text-gray-200 py-12">
+  <div class="content-width presentation-box bg-2">
+    <div class="md:p-8">
+      <h2 class="font-bold text-xl mb-8 md:text-2xl">Proyectos</h2>
+      <ul>
+        <ng-container *ngFor="let project of projects; let last = last">
+          <li>
+            <div>
+              <h3 class="custom-font-color md:text-xl text-lg">
+                <strong> {{ project.title }}</strong>
+              </h3>
+              <div class="flex flex-col tools-text md:text-sm">
+                <span>{{ project.shortDesc }}</span>
+              </div>
+              <figure class="tools-text py-4">
+                <img src="{{ project.imageUrl }}" class="w-40 h-40" />
+              </figure>
+              <div>
+                <h4 class="text-semibold"><strong>Herramientas:</strong></h4>
+                <ul class="flex flex-row custom-font-color gap-x-2 tools-text">
+                  <li *ngFor="let tool of project.tools; let lastTool = last">
+                    {{ tool }}<span *ngIf="!lastTool"> ·</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- Solo mostrar el hr si no es el último elemento de la lista -->
+          <hr class="my-8 mx-20" *ngIf="!last" />
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</section>
