@@ -1,0 +1,60 @@
+<div id="contact" class="flex justify-center items-start text-gray-200">
+  <div
+    class="flex items-center justify-center flex-col mt-14 mb-12 md:mb-20 mt-0 md:gap-x-4 md:flex-row content-width bg-2 presentation-box"
+  >
+    <figure
+      class="w-40 h-40 md:w-80 md:h-80 cursor-pointer"
+      (click)="toggleImage()"
+    >
+      <img
+        [src]="currentImageSrc"
+        alt="Penguin_Frames_dancing"
+        class="w-full h-full"
+      />
+    </figure>
+    <div class="flex flex-col gap-y-2 md:gap-y-0">
+      <div class="flex justify-center md:justify-start">
+        <h1 class="font-bold text-lg md:text-3xl">Santiago Moyano,</h1>
+      </div>
+
+      <div class="flex items-center justify-center md:justify-start">
+        <h2 class="font-bold text-xs md:text-lg typing-animation">
+          desarrollador <span class="hidden-text">de software</span>
+          <span class="custom-font-color"> fullstack.</span>
+        </h2>
+        <h2 class="blink font-bold text-xs md:text-lg">|</h2>
+      </div>
+
+      <div class="flex justify-center md:justify-start mt-6 md:mt-10">
+        <h1 class="font-bold text-lg md:text-3xl">Contactame</h1>
+      </div>
+      <div
+        class="mt-2 md:mt-4 space-x-4 justify-center md:justify-start text-black font-semibold flex"
+      >
+        <a
+          href="https://www.linkedin.com/in/santiago-moyano-4649952a2/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center space-x-2 icon-transition bg-3 px-3"
+          ><i class="fab fa-1x fa-linkedin"></i
+          ><span class="hidden md:inline py-1">Linkedin</span></a
+        >
+        <a
+          href="mailto:santisebmoyanosuarez@gmail.com"
+          class="flex items-center justify-center space-x-2 icon-transition bg-3 px-3 md:py-0 py-1"
+        >
+          <i class="fas fa-envelope"></i>
+          <span class="hidden md:inline">Mail</span>
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=2983601846"
+          target="_blank"
+          class="flex items-center justify-center space-x-2 icon-transition bg-3 px-3 md:py-0 py-1"
+        >
+          <i class="fab fa-whatsapp"></i>
+          <span class="hidden md:inline">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
