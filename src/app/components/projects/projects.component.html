@@ -1,34 +1,74 @@
-<section class="flex justify-center items-center text-gray-200 py-12">
-  <div class="content-width presentation-box bg-2">
-    <div class="md:p-8">
-      <h2 class="font-bold text-xl mb-8 md:text-2xl">Proyectos</h2>
-      <ul>
-        <ng-container *ngFor="let project of projects; let last = last">
-          <li>
-            <div>
-              <h3 class="custom-font-color md:text-xl text-lg">
-                <strong> {{ project.title }}</strong>
-              </h3>
-              <div class="flex flex-col tools-text md:text-sm">
-                <span>{{ project.shortDesc }}</span>
-              </div>
-              <figure class="tools-text py-4">
-                <img src="{{ project.imageUrl }}" class="w-40 h-40" />
+<section
+  id="projects"
+  class="flex flex-col justify-center items-center text-gray-200 mb-12"
+>
+  <h2 class="text-3xl mb-8 font-semibold">Proyectos</h2>
+  <ul class="projects-container grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <ng-container *ngFor="let project of projects; let last = last">
+      <div class="flex flex-col items-center justify-center">
+        <li class="presentation-box bg-2 relative md:p-6">
+          <!-- Contenedor de cada proyecto -->
+          <div class="flex flex-col">
+            <!-- Imagen del proyecto -->
+            <div class="relative overflow-hidden h-60">
+              <figure
+                class="tools-text w-full h-full image-box relative border-2"
+              >
+                <img
+                  src="{{ project.imageUrl }}"
+                  class="w-full h-full object-cover image-inside z-60"
+                />
               </figure>
+              <!-- Texto descriptivo (oculto por defecto) -->
+              <div
+                class="absolute-div absolute top-0 left-0 w-full h-full p-4 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out flex flex-col justify-end items-end"
+              >
+                <h3 class="text-xl font-bold mb-2">{{ project.title }}</h3>
+                <div
+                  class="space-x-4 gap-y-2 flex flex-col md:flex-row items-end font-semibold"
+                >
+                  <a
+                    *ngIf="project.github !== ''"
+                    [href]="project.github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center space-x-2 icon-transition bg-3 px-3"
+                  >
+                    <span class="py-1 text-sm">Ver github</span>
+                  </a>
+                  <a
+                    *ngIf="project.website !== ''"
+                    [href]="project.website"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center space-x-2 icon-transition bg-3 px-3"
+                  >
+                    <span class="py-1 text-sm">Visitar página</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Texto descriptivo -->
+            <div class="py-4 flex flex-col justify-center">
+              <h3 class="text-2xl font-bold mb-2">
+                {{ project.title }}
+              </h3>
+              <p class="mb-8 tools-text">{{ project.shortDesc }}</p>
               <div>
-                <h4 class="text-semibold"><strong>Herramientas:</strong></h4>
-                <ul class="flex flex-row custom-font-color gap-x-2 tools-text">
-                  <li *ngFor="let tool of project.tools; let lastTool = last">
+                <h4 class="font-semibold">Herramientas:</h4>
+                <ul class="pl-0 list-none">
+                  <li
+                    *ngFor="let tool of project.tools; let lastTool = last"
+                    class="inline tools-text custom-font-color"
+                  >
                     {{ tool }}<span *ngIf="!lastTool"> ·</span>
                   </li>
                 </ul>
               </div>
             </div>
-          </li>
-          <!-- Solo mostrar el hr si no es el último elemento de la lista -->
-          <hr class="my-8 mx-20" *ngIf="!last" />
-        </ng-container>
-      </ul>
-    </div>
-  </div>
+          </div>
+        </li>
+      </div>
+    </ng-container>
+  </ul>
 </section>

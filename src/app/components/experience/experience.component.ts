@@ -42,7 +42,8 @@ export class ExperienceComponent {
       titulo: 'Diseñador de páginas web',
       puesto: 'Bahitres - Web Bahía Blanca',
       fecha: 'Agosto 2019 - Enero 2020 · 6 meses',
-      descripcion: 'Creación de páginas web con Wordpress bajo tutela.',
+      descripcion:
+        'Creación de páginas web con Wordpress en conjunto con un desarrollador.',
       herramientas: ['Wordpress', 'Diseño web'],
     },
   ];

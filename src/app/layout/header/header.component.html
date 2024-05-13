@@ -1,4 +1,4 @@
-<header class="font-custom bg-1">
+<header id="top" class="font-custom bg-1">
   <nav
     class="mx-auto flex content-width items-center justify-between py-6 md:px-0"
     aria-label="Global"
@@ -32,7 +32,7 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-4 text-white">
-      <ng-container *ngFor="let item of menuItems; let i = index">
+      <!-- <ng-container *ngFor="let item of menuItems; let i = index">
         <button
           class="rounded-md custom-transition-btn"
           [class.selected]="selectedItemIndex === i"
@@ -44,7 +44,35 @@
             >{{ item.label }}</a
           >
         </button>
-      </ng-container>
+      </ng-container> -->
+      <button class="rounded-md custom-transition-btn">
+        <a
+          href="#top"
+          class="text-sm font-bold text-gray-200 leading-6 px-4 py-2"
+          >Inicio</a
+        >
+      </button>
+      <button class="rounded-md custom-transition-btn">
+        <a
+          href="#experience"
+          class="text-sm font-bold text-gray-200 leading-6 px-4 py-2"
+          >Experiencia</a
+        >
+      </button>
+      <button class="rounded-md custom-transition-btn">
+        <a
+          href="#projects"
+          class="text-sm font-bold text-gray-200 leading-6 px-4 py-2"
+          >Proyectos</a
+        >
+      </button>
+      <button class="rounded-md custom-transition-btn">
+        <a
+          href="#contact"
+          class="text-sm font-bold text-gray-200 leading-6 px-4 py-2"
+          >Contacto</a
+        >
+      </button>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
