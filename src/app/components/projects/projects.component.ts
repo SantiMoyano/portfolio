@@ -19,7 +19,6 @@ export class ProjectsComponent {
         'JWT',
         'MySQL',
         'Google Cloud',
-        'VPS',
       ],
       website: 'https://nutrivida.com.ar',
       github: '',
@@ -27,7 +26,7 @@ export class ProjectsComponent {
     {
       title: 'Blocky',
       shortDesc:
-        'App para ayudarme a gestionar proyectos dividiendolos en tareas mas pequeñas.',
+        'App para ayudarme a gestionar proyectos dividiéndolos en tareas más pequeñas.',
       imageUrl: '../../../assets/blocky.webp',
       tools: [
         'React',
@@ -43,7 +42,7 @@ export class ProjectsComponent {
     {
       title: 'Movie Review App',
       shortDesc:
-        'App de péliculas para practicar Autenticación, manejo de Tokens y BBDD no relacionales.',
+        'App de películas para practicar autenticación, manejo de tokens y BBDD no relacionales.',
       imageUrl: '../../../assets/movie.webp',
       tools: [
         'React',
@@ -59,17 +58,9 @@ export class ProjectsComponent {
     {
       title: 'Players',
       shortDesc:
-        'Web construida con el stack MERN para gestionar jugadores y tags, con funcionalidad de usuarios.',
+        'Web construida con el stack MERN para gestionar jugadores y etiquetas, con funcionalidad de usuarios.',
       imageUrl: '../../../assets/players.webp',
-      tools: [
-        'React',
-        'Tailwind',
-        'Spring Boot',
-        'Spring Security',
-        'JWT',
-        'Google Cloud',
-        'VPS Ubuntu',
-      ],
+      tools: ['React', 'CSS3', 'Node.js', 'Express', 'MongoDB'],
       website: 'https://players-flame.vercel.app',
       github: 'https://github.com/SantiMoyano/players',
     },

@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent {
   experienciaLaboral = [
     {
-      titulo: 'Desarrollo de webs y APIs',
+      titulo: 'Desarrollo Web para Distribuidora',
       puesto: 'Freelance',
-      fecha: 'Octubre 2023 - Actualidad · 8 meses',
+      fecha: 'Abril 2024 - Actualidad · 2 meses',
       descripcion:
-        'Creación de páginas web con React, despliegue de páginas y APIs Spring Boot, conexión a base de datos MySQL, gestión de roles de usuario-administrador.',
+        'Creación de una página web usando React y APIs con Spring Boot, desplegada en Google Cloud. Conexión a MySQL, gestión de roles con Spring Security y JWT.',
       herramientas: [
         'React',
         'Tailwind',
@@ -32,19 +32,19 @@ export class ExperienceComponent {
         'Trabajé en equipo para desarrollar aplicaciones y procesos low code útiles para el registro de licencias de los empleados de la empresa.',
       herramientas: [
         'Microsoft PowerApps',
-        'Sharepoint',
+        'SharePoint',
         'GitHub',
         'Microsoft Flow',
         'Microsoft Teams',
       ],
     },
     {
-      titulo: 'Diseñador de páginas web',
+      titulo: 'Diseñador de Páginas Web',
       puesto: 'Bahitres - Web Bahía Blanca',
       fecha: 'Agosto 2019 - Enero 2020 · 6 meses',
       descripcion:
-        'Creación de páginas web con Wordpress en conjunto con un desarrollador.',
-      herramientas: ['Wordpress', 'Diseño web'],
+        'Creación de páginas web con WordPress en conjunto con un desarrollador.',
+      herramientas: ['WordPress', 'Diseño web'],
     },
   ];
 
