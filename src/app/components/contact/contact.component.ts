@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ThemeService } from '../../services/theme.service';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
+  constructor(private themeService: ThemeService) {}
+
   imageSrcs = [
     '../../../assets/pika.gif',
     '../../../assets/gary.gif',
@@ -19,8 +23,7 @@ export class ContactComponent {
   }
 
   toggleImage() {
+    this.themeService.toggleColor();
     this.currentIndex = (this.currentIndex + 1) % this.imageSrcs.length;
   }
-
-  constructor() {}
 }

@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ThemeService } from '../../services/theme.service';
+
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent {
+  constructor(private themeService: ThemeService) {}
+
   imageSrcs = [
     '../../../assets/deltarune-kris.gif',
     '../../../assets/Penguin_Frames_dancing.gif',
@@ -19,8 +23,7 @@ export class HeroComponent {
   }
 
   toggleImage() {
+    this.themeService.toggleColor();
     this.currentIndex = (this.currentIndex + 1) % this.imageSrcs.length;
   }
-
-  constructor() {}
 }

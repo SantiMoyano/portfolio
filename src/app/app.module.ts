@@ -1,5 +1,6 @@
 import { AboutComponent } from './components/about/about.component';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -18,8 +19,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ProjectsComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent], // Agrega el componente AppComponent al array bootstrap
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

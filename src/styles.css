@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --custom-color-toggleable: rgb(193, 255, 37);
+}
+
+.custom-font-color {
+  color: var(--custom-color-toggleable);
+}
+
 body,
 figure,
 html {
@@ -25,7 +33,7 @@ header {
 }
 
 .bg-3 {
-  background-color: rgb(193, 255, 37);
+  background-color: var(--custom-color-toggleable);
 }
 
 .min-content-height {
@@ -33,12 +41,8 @@ header {
 }
 
 .presentation-box {
-  border: 2px dotted rgb(193, 255, 37);
+  border: 2px dotted var(--custom-color-toggleable);
   box-shadow: 8px 8px rgb(0, 0, 0);
-}
-
-.custom-font-color {
-  color: rgb(193, 255, 37);
 }
 
 .content-width {

@@ -39,10 +39,10 @@ ul.flex.flex-row.custom-font-color {
 
 .icon-transition:hover {
   transform: scale(1.06);
-  color: rgb(193, 255, 37);
+  color: var(--custom-color-toggleable);
   background-color: black;
   box-shadow: none;
-  border: solid 2px rgb(193, 255, 37);
+  border: solid 2px var(--custom-color-toggleable);
 }
 
 .projects-container {

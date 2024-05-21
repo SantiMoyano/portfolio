@@ -1,7 +1,7 @@
 .custom-transition-btn {
   border: solid 2px black;
   border-radius: 6px;
-  background-color: rgb(193, 255, 37);
+  background-color: var(--custom-color-toggleable);
   box-shadow: 6px 6px rgba(0, 0, 0, 1);
   transition: transform 0.3s ease-in-out, color 0.3s ease,
     background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
@@ -9,10 +9,10 @@
 
 .custom-transition-btn:hover {
   transform: scale(1.06);
-  color: rgb(193, 255, 37);
+  color: var(--custom-color-toggleable);
   background-color: black;
   box-shadow: none;
-  border: solid 2px rgb(193, 255, 37);
+  border: solid 2px var(--custom-color-toggleable);
 }
 
 .custom-transition-btn a {
@@ -21,7 +21,7 @@
 }
 
 .custom-transition-btn:hover a {
-  color: rgb(193, 255, 37);
+  color: var(--custom-color-toggleable);
 }
 
 .selected {
@@ -29,5 +29,5 @@
 }
 
 .selected a {
-  color: rgb(193, 255, 37);
+  color: var(--custom-color-toggleable);
 }

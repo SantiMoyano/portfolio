@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Project } from './projects.model';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
 })
-export class ProjectsComponent {
-  projects = [
+export class ProjectsComponent implements OnInit {
+  projects: Project[] = [
     {
       title: 'Nutrivida',
       shortDesc:
@@ -67,4 +69,6 @@ export class ProjectsComponent {
   ];
 
   constructor() {}
+
+  ngOnInit(): void {}
 }
