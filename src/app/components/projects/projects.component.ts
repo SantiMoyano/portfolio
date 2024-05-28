@@ -26,20 +26,20 @@ export class ProjectsComponent implements OnInit {
       github: '',
     },
     {
-      title: 'Blocky',
+      title: 'Url Shortener',
       shortDesc:
-        'App para ayudarme a gestionar proyectos dividiéndolos en tareas más pequeñas.',
-      imageUrl: '../../../assets/blocky.webp',
+        'Aplicación diseñada para acortar y simplificar URLs, alojándolas en la nube.',
+      imageUrl: '../../../assets/urlshortener.webp',
       tools: [
-        'React',
+        'Angular',
         'Tailwind',
         'Spring Boot',
-        'Spring Security',
-        'JWT',
+        'JUnit',
         'MySQL',
+        'Google Cloud',
       ],
-      website: '',
-      github: 'https://github.com/SantiMoyano/blocky',
+      website: 'https://urlshortener-bay.vercel.app',
+      github: 'https://github.com/SantiMoyano/urlshortener-front',
     },
     {
       title: 'Movie Review App',
