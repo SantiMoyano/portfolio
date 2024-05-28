@@ -22,7 +22,7 @@ export class HeroComponent {
     return this.imageSrcs[this.currentIndex];
   }
 
-  toggleImage() {
+  toggleImageAndTheme() {
     this.themeService.toggleColor();
     this.currentIndex = (this.currentIndex + 1) % this.imageSrcs.length;
   }
