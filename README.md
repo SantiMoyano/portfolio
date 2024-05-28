@@ -7,7 +7,7 @@ Elegí hacer un portafolio personal para el seminario de Angular. Incluye seccio
 ## Datos del Estudiante
 
 - **Nombre:** Santiago Moyano Suárez
-- **LU:** 125627
+- **Sede:** Tres Arroyos
 - **Email:** santisebmoyanosuarez@gmail.com
 
 ## Enlace a StackBlitz
@@ -52,6 +52,6 @@ También esta deployado en [Vercel](https://santiagodev.vercel.app)
 5. (y 6) **Comunicación entre Componentes:** . **Servicios:**
 
 Se implementó un Servicio (theme.service.ts), el cual se encarga de cambiar el color principal de la página cuando el usuario interactua en la animación del hero o del contacto, donde posteriormente se comunica con AppComponent para pedirle que cambie el color de la página.
-theme.service define una variable "color" observable a la cual se suscribe App Component.
+theme.service define una variable "color" observable a la cual se suscribe AppComponent.
 Cuando el usuario clickea el gif se llama a un metodo del servicio el cual se encarga de recorrer los distintos colores de la página.
 Como App Component esta suscrito a ese atributo, cada vez que sufre un cambio, le pido que cambie la variable css del color principal de la página.
