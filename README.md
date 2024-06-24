@@ -9,6 +9,7 @@ Elegí hacer un portafolio personal para el seminario de Angular. Incluye seccio
 - **Nombre:** Santiago Moyano Suárez
 - **Sede:** Tres Arroyos
 - **Email:** santisebmoyanosuarez@gmail.com
+- **DNI:** 51702139
 
 ## Enlace a StackBlitz
 
